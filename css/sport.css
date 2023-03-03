@@ -1,0 +1,321 @@
+/* ======================================================= */
+/* --------------------- Sport.com ----------------------- */
+/* ======================================================= */
+@font-face {
+  font-family: "LiberationSans";
+
+  src: url("./fonts/LiberationSans-Regular-webfont.woff") format("woff"), 
+    url("./fonts/LiberationSans-Regular-webfont.woff2") format("woff2"); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LiberationSans-Bold";
+
+  src: url("./fonts/LiberationSans-Bold-webfont.woff") format("woff"), 
+    url("./fonts/LiberationSans-Bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 90%;
+}
+body {
+  font-family: 'LiberationSans', Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul, figure, section {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+/* =============== global============== */
+#global {
+  width: 100%;
+  margin: 0;
+  background-color: #1c1c1c;
+  }
+/* =============== header =============== */
+header {
+  background-image: url("../images/background2.jpg");
+  background-color: #fff;/* backup in cas the background image is broken*/
+  color: #212121;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header section {
+  width: 20%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+header img {
+  width: 80%;
+}
+header h1,h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+header span {
+  color: #ea9f06;
+}
+section+section {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section+section a{
+  color: #212121;
+  }
+section+section nav {
+  display: flex;
+  justify-content: space-between;
+ }
+section+section nav li {
+  list-style-type: none;
+  font-size: 1.2em;
+}
+section+section p {
+  margin-top: 0;
+}
+/* =============== main================ */
+main {
+  background-color: #f3f3f3;
+  color: #212121;
+  width: 60%;
+  margin: 20px 20% 0 20%;
+}
+/* -----------page header-------- */
+#header-page img {
+  width: 100%;
+}
+/*------------- catalogue---------*/
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10%;
+}
+main section article{
+  width: 33%;
+  margin: 5% 0 3% 11%;
+   }
+article div {
+  position: relative;
+}
+main section article figure {
+    position: relative;
+  }
+main section article figure img {
+  width: 100%;
+}
+main section article figure figcaption{
+  font-weight: normal; 
+  text-align: center; 
+  position: absolute;
+  bottom: 5%;
+  padding: 0 13%;
+    }
+.reduction_box {
+  display: block;
+  background-color: #292929;
+  width: 5em;
+  height: 3em;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  position: absolute;
+  top: 2.5%;
+  right: -2.5%;
+  z-index: 1;
+}
+.reduction {
+  color: #ea9f06;
+  font-size: 2em;
+  position: absolute;
+  top: 3%;
+  right: -2.5%;
+  z-index: 2;
+  margin: 0;
+}
+article ul {
+  display: flex;
+  list-style-type: none;
+  font-family: 'LiberationSans-Bold', Arial, Helvetica, sans-serif;
+  margin: 5% 0;
+  }
+.button {
+  background-color: #363636;
+  background: linear-gradient(0deg, #363636 0%, #191919 100%);
+  padding: 10px 7%;
+  text-align: center;
+}
+.button a {
+  color: #fff;
+  font-size: 1.3em;
+ }
+ .old_price, .new_price {
+   font-weight: bold;
+   font-size: 2em;
+   padding: 10px 5%;
+   text-align: center;
+ }
+ .old_price {
+   text-decoration: line-through;
+ }
+ .new_price {
+   color: #ea9f06;
+ }
+ /* ============footer============ */
+ footer {
+   background-color: #373737;
+   color: #fff;
+   position: relative;
+   padding-top: 40px;
+ }
+ /* ------------ nav footer-------- */
+ #footer_nav_box {
+   background-color: #d1d1d1;
+   height: 20px;
+   width: 20%;
+   border: 1px solid transparent;
+   border-radius: 5px;
+   position: absolute;
+   top: -8px;
+   left: 40%;
+  }
+ #footer_nav ul {
+   display: flex;
+   justify-content: space-evenly;
+   width: 20%;
+   position: absolute;
+   top: -8px;
+   left: 40%;
+
+ }
+ 
+ #footer_nav a {
+  color: #212121;
+ }
+ /* -----------promises of quality-------- */
+ footer article {
+   display: flex;
+   width: 60%;
+   justify-content: space-between;
+   margin: 0 auto 15px 20%;
+   
+ }
+ footer article div {
+   text-align: center;
+ }
+ 
+ /* ------------social network----------- */
+#social {
+   display: flex;
+   justify-content: center;
+   border-top: 2px solid #d1d1d1;
+   width: 60%;
+   padding-top: 20px;
+   margin-left: 20%;
+ }
+ #social ul {
+  list-style-type: none;
+ }
+ #social ul li {
+   padding-left: 5%;
+ }
+ /* ----------- legale disclamer---------- */
+#disclaimer {
+  margin-top: 20px;
+  margin-left: 42%;
+}
+
+/* ===================RWD=================== */
+@media screen and (max-width: 576px) {
+  header {
+    flex-direction: column;
+  }
+  
+  header section {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  section+section nav {
+    margin-top: 30px;
+   }
+   section+section nav ul{
+    justify-content: space-evenly;
+   }
+   main section {
+    display: block;
+  }
+
+   main section article{
+    width: 60%;
+    margin: 5% 0 3% 20%;
+    }
+    .reduction_box, .reduction {
+        right: -3%;
+         }
+    article ul {
+      padding: 0;
+      }
+    .button {
+      padding: 10px 4%;
+      text-align: center;
+    }
+    .button a {
+       font-size: 1em;
+     }
+     .old_price, .new_price {
+       font-weight: bold;
+       font-size: 1.5em;
+       padding: 10px 5%;
+       text-align: center;
+     }
+     #footer_nav_box {
+      background-color: #d1d1d1;
+      height: 20px;
+      width: 50%;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      position: absolute;
+      top: -8px;
+      left: 25%;
+     }
+    #footer_nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      width: 50%;
+      position: absolute;
+      top: -8px;
+      left: 25%;
+    }
+    #footer_nav a {
+      font-size: 0.8em; 
+    }
+    footer article {
+      width: 100%;
+      padding: 5%;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+    footer article div {
+      width: 50%;
+    }
+    #disclaimer {
+      margin-left: 23%;
+    }
+}
